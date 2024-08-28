@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <style>
+        body{
+            background-color: #FAE3D9;
+        }
+        h1{
+            color: #0F4C75;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 4rem;
+            margin-top: 0px;
+        }
+        h2{
+            color: #0F4C75;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2.5rem;
+            margin-top: 0px;
+        }
+        li{
+            font-size: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .now{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .now>img{
+            display: block;
+            margin:auto;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+            height: auto;
+            width: 100%;
+            max-width: 300px;
+            /* these two are added to make image responsive  */
+        }
+        .final{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .final button{
+            background-color: #61C0BF;
+            border-radius: 5px;
+            border : none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        .final button:hover{
+            background-color: #BBE1FA;
+        }
+        .final a{
+            color: #355C7D;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        2048
+        <h1></h1>
+        <h2>A Game of Mathematical Strategy and Logic</h2>
+        <ol>
+          <li>
+            Player engages in a challenging 4x4 grid, manipulating tiles that
+            represent powers of 2.
+          </li>
+          <li>
+            The game begins with the computer randomly generating a tile with the
+            value of 2 within the grid.
+          </li>
+          <li>
+            The player can slide the tiles in four possible directions: Left, Right,
+            Up, or Down, depending on the available space.
+          </li>
+          <li>
+            When two tiles of the same value collide, they merge into a new tile,
+            doubling in value.
+          </li>
+          <li>Each successful merge increases the player's score.</li>
+          <li>
+            As the player continues making moves, they have the option to quit the
+            game at any time by pressing the key <em>"e"</em>. Upon quitting, the player can
+            review their current score and the sequence of moves they made.
+          </li>
+        </ol>
+      </h1>
+    
+    <div class = "now">
+        <img src = "./images/2048.jpg" alt = "2048-Game Board" draggable="false">
+    </div>
+
+    <div class = "final">
+        <p class = "final">To Access this game simulated in Cpp click on the below button</p>
+    <button><a href = "https://github.com/MaakhishSai/2048-Game">Visit Me</a></button>
+
+    </div>
+</body>
+</html>

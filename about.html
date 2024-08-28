@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        color: #333;
+        background-color: #fffbe6; /* Updated background color */
+        line-height: 1.6;
+      }
+
+      .navbar {
+        background-color: #343a40 !important;
+        padding: 15px 0;
+      }
+
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      .navbar-nav .nav-link {
+        font-size: 1.1rem;
+        padding-right: 25px;
+        color: #ffffff !important;
+      }
+
+      .about-section {
+        display: flex;
+        align-items: center; /* Center content vertically */
+        justify-content: center; /* Center content horizontally */
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        padding: 3rem 1rem; /* Adjusted padding */
+      }
+
+      .about-section {
+        background-image: url("/images/bgimage.jpg"); /* Replace with the path to your image */
+        background-size: cover; /* Adjusts the background image size */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        padding: 5rem 1rem; /* Adjusted padding */
+      }
+
+      .about-text {
+        max-width: 100%; /* Full width on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+      }
+
+      .about-text h2 {
+        font-size: 2rem; /* Adjust font size */
+        font-weight: bolder; /* Bolder text */
+        color: #ff9100;
+      }
+
+      .about-section img {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border: 3px solid #4e80b3;
+      }
+
+      .about-text p {
+        font-size: 1rem; /* Adjust font size for readability */
+        font-weight: bold;
+        color: #201e43;
+      }
+
+      footer {
+        background-color: #d5ed9f;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        text-align: center;
+      }
+
+      footer p {
+        font-weight: bold;
+        color: #00712d;
+      }
+
+      /* Apply styles only on large screens */
+      @media (min-width: 992px) {
+        .about-section img {
+          border-radius: 50%;
+          width: 100%;
+          max-width: 400px;
+          height: auto;
+          border: 3px solid #4e80b3;
+          margin-top: 70px;
+          /* margin-left: 200px; */
+        }
+        .about-text p {
+          font-size: 1.5rem; /* Adjust font size for readability */
+          color: #201e43;
+        }
+        .about-text h2 {
+          font-size: 3rem; /* Adjust font size */
+          font-weight: bolder; /* Bolder text */
+          color: #ff9100;
+        }
+      }
+      /* Apply styles only on very small screens */
+      @media (max-width: 575.98px) {
+        .about-section img {
+          max-width: 200px; /* Smaller maximum width */
+          margin-top: 20px; /* Adjust top margin if needed */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- About Section -->
+    <section class="about-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 about-text">
+            <h2>About Me</h2>
+            <p>
+              I'm a third-year Computer Science Student at NIT Calicut. I am
+              passionate about creating and innovating, turning ideas into
+              reality through code. My journey in web technology began with the
+              idea of building a website that empowers users to efficiently
+              solve their tasks. I enjoy tackling challenging problems and
+              continuously learning to improve my skills.
+            </p>
+            <p>
+              Beyond coding, I love capturing moments through photography, which
+              allows me to see the world from a different perspective. This
+              creative outlet helps me balance my technical skills with artistic
+              expression.
+            </p>
+            <p>
+              Over the years, I've learned to view problems from multiple
+              perspectives. Programming has not only equipped me with the skills
+              to solve coding challenges but also taught me how to apply these
+              principles to real-world scenarios. I've enjoyed learning HTML,
+              CSS, and JavaScript, and have combined them with Bootstrap to
+              create responsive and user-friendly websites.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="/images/me.jpg" alt="Your Photo" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 My Portfolio | Designed by Maakhish Sai</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
